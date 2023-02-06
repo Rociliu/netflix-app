@@ -1,0 +1,14 @@
+<main>
+    <header>
+        {{filmsCollections.section}}
+    </header>
+
+    <section>
+        <div *ngFor="let film of filmsCollections.films">
+            <p>{{film.title }}</p>
+            <img src="{{ film.image }}" >
+        </div>   
+    </section>
+
+</main>
+
